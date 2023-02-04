@@ -39,7 +39,8 @@ function ProductCard({imageUrl, brandName, produtName, gender, image2, image3, i
                 </>
             }
            
-            <p>{`Rs. ${price} `} <span className='originalPrice'>{`Rs. ${originalPrice}`}</span> <span className='offer'>{calculateOffer(id, originalPrice, price) + "% OFF"}</span></p>
+            <p>{`Rs. ${price} `} </p>
+            {/* <span className='originalPrice'>{`Rs. ${originalPrice}`}</span> <span className='offer'>{calculateOffer(id, originalPrice, price) + "% OFF"}</span> */}
         </div>
     );
 }
