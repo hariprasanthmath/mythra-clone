@@ -1,0 +1,30 @@
+/* *{
+    padding: 0px;
+    margin: 0px;
+  } */
+  
+.navbarcontainer{
+   
+    /* background-color: black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+.navbarcontainer > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.wishbagcont > div  p{
+    padding: 4px;
+    margin: auto;
+}
+.logocontainer > img{
+    width: 100px;
+}
+.routecontainer{
+    margin: auto;
+    padding: 8px;
+}
