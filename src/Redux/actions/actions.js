@@ -51,3 +51,9 @@ export const setGender = (dispatch, data)=>{
         payload : data
     })
 }
+export const addToWishList = (dispatch, data)=>{
+    dispatch({
+        type : "ADDTOWISHLIST",
+        payload : data
+    })
+}

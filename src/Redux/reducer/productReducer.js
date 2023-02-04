@@ -64,6 +64,11 @@ export const productReducer = (state = initialState, action)=>{
             brandFilter : [],
             categoryFilter : []
         }
+        case "ADDTOWISHLIST" : 
+        return {
+            ...state,
+            wishList : action.payload
+        }
         
         
         default : 

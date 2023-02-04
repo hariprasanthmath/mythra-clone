@@ -32,7 +32,7 @@ function ProductCard({imageUrl, brandName, produtName, gender, image2, image3, i
             <img onClick={navigateToDetails} src={imageUrl} alt={produtName}></img>
             {
                 isShown ? 
-                <Extracard/> :
+                <Extracard id={id}/> :
                 <>
                     <p>{brandName}</p>
                     <p>{produtName}</p>
