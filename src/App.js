@@ -3,6 +3,7 @@ import './App.css';
 import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 import ProductListPage from './Pages/ProductListPage';
 import Navbar from './Components/Navbar/Navbar';
+import ProductDetailsPage from './Pages/ProductDetailsPage';
 function App() {
   return (
     <>
@@ -14,7 +15,7 @@ function App() {
            <Route path="mens" element={<ProductListPage/>}></Route>
         {/* </Route> */}
         <Route path="/products">   
-                 <Route path=":productid" element={<>product details</>}></Route>
+                 <Route path=":id" element={<ProductDetailsPage/>}></Route>
            </Route>
       </Routes>
      </BrowserRouter>
