@@ -24,6 +24,7 @@ function ProductDetailsPage(props) {
     const handleaddToCart = ()=>{
         console.log(cartData);
         let count = getCurrentProductCount(cartData, id);
+        console.log("current prodct count", count);
         currentProduct.count = count;
         addProductToCart(dispatch, currentProduct , true)
     }
