@@ -13,7 +13,7 @@ function App() {
            <Route path='' element={<Navigate to="mens"/>}></Route>
            <Route path="mens" element={<ProductListPage/>}></Route>
         {/* </Route> */}
-        <Route path="/productdetails">   
+        <Route path="/products">   
                  <Route path=":productid" element={<>product details</>}></Route>
            </Route>
       </Routes>

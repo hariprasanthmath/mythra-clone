@@ -1,0 +1,7 @@
+.productcard > img{
+      width: 220px;
+}
+.productcard {
+    width: fit-content;
+    margin: 30px;
+}
