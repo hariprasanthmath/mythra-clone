@@ -5,7 +5,11 @@ const initialState = {
     cartData : [],
     wishList : [],
     currentPage : true,
-    currentProduct : 1
+    currentProduct : 1,
+    brandFilter : [],
+    categoryFilter : [],
+    OfferFilter : [],
+    genderFilter : []
 }
 
 export const productReducer = (state = initialState, action)=>{
@@ -39,6 +43,28 @@ export const productReducer = (state = initialState, action)=>{
                 ...state,
                 currentProduct : action.payload
             }
+        case  "SETBRANDFILTER" :
+         return {
+            ...state,
+            brandFilter : action.payload
+         }
+        case "SETCATEGORYFILTER" : 
+        return {
+            ...state,
+            categoryFilter : action.payload
+        }
+        case "SETGENDERFILTER" :
+            return {
+                ...state,
+                genderFilter : action.payload
+            }
+        case "RESETFILTERS" : 
+        return {
+            ...state,
+            brandFilter : [],
+            categoryFilter : []
+        }
+        
         
         default : 
          return state;

@@ -1,6 +1,10 @@
 .productscontainer{
     margin: 40px;
-    margin-left: 350px;
+    /* margin-left: 350px; */
     display: grid;
     grid-template-columns: auto auto auto auto;
+}
+.filterandlist{
+    display: flex;
+    flex-direction: row;
 }

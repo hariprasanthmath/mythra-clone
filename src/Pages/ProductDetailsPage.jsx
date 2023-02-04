@@ -10,7 +10,7 @@ import { addProductToCart } from '../Redux/actions/actions';
 import { useDispatch } from 'react-redux';
 import { getCurrentProductCount } from '../Utils/getCurrentProductCount';
 import { setPage } from '../Redux/actions/actions';
-
+import "../Components/ProductCard/button.css"
 function ProductDetailsPage(props) {
     // image2, image3, image4
     // imageUrl
@@ -60,8 +60,8 @@ function ProductDetailsPage(props) {
                 {"<- go Back"}
             </p>
         </div>
-        <div>
-            
+        <div className='leftrightcontainer'>
+             
             <div className='leftside'>
               
                   <div>  <img src={currentProduct.imageUrl} alt="productimage"></img></div>
@@ -70,12 +70,14 @@ function ProductDetailsPage(props) {
                   <div>  <img src={currentProduct.image4} alt="productimage"></img></div>
             </div>
             <div className='rightside'>
-                    <p>{currentProduct.produtName}</p>
-                    <p>{currentProduct.productDescription}</p>
-                     
-                    <p>{`Rs. ${currentProduct.price} `} <span className='originalPrice'>{`Rs. ${currentProduct.originalPrice}`}</span> <span className='offer'>{calculateOffer(id, currentProduct.originalPrice, currentProduct.price) + "% OFF"}</span></p>
-                    <div>
-                        <h4>SELECT SIZE</h4>
+                    <h3 className='productname'>{currentProduct.produtName}</h3>
+                    <p className='productdescription'>{currentProduct.productDescription}</p>
+                    <p className='price'>{`Rs. ${currentProduct.price} `} </p>
+                    {/* <span className='originalPrice'>{`Rs. ${currentProduct.originalPrice}`}</span> <span className='offer'>{calculateOffer(id, currentProduct.originalPrice, currentProduct.price) + "% OFF"}</span> */}
+                     <hr/>
+                     <h4>SELECT SIZE</h4>
+
+                    <div className='sizeboxcontainer'>
                         {
                             currentProduct.size?.map((eachSize)=>{
                                 return (
@@ -86,10 +88,10 @@ function ProductDetailsPage(props) {
                             })
                         }
                     </div>
-                    <button onClick={handleaddToCart} className='addtocartbutton'>
+                    <button style={{backgroundColor:"pink"}}  onClick={handleaddToCart} className='button-6'>
                              ADD TO BAG
                     </button>
-                    <button onclick={handleaddToWishlist} className='addtowishlistbutton'>
+                    <button  style={{color:"pink"}} onclick={handleaddToWishlist} className='button-6'>
                              WISHLIST
                     </button>
             </div>
