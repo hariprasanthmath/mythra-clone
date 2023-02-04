@@ -1,0 +1,15 @@
+.filtercontainer{
+    margin-top: 40px;
+    min-width: 200px;
+    /* padding: 30px; */
+}
+.filtercontainer > div {
+    padding-left: 50px;
+}
+.filtercontainer > div > input {
+    margin-bottom: 10px;
+}
+.filtercontainer h3 , h4 {
+    padding-left: 30px;
+    margin: 10px 0px;
+}

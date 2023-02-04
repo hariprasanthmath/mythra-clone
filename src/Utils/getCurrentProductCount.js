@@ -1,10 +1,16 @@
 export const getCurrentProductCount = (cartData, id)=>{
-    let count = 0;
-    cartData?.map((eachProduct)=>{
-        if(eachProduct?.id === id){
-            count = eachProduct.count || 0;
+ 
+   let data = cartData?.filter((eachProduct)=>{
+        if(eachProduct?.id == id){
+            return eachProduct;
         }
-        return eachProduct;
+        
     })
-    return count;
+    console.log(data);
+    if(data.length ===0 ){
+        return 0;
+    }else{
+        return data[0].count;
+    }
+   
 }

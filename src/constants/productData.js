@@ -26,7 +26,7 @@ export const productNameData = [
         image4: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12947450/2021/1/27/7d643463-327a-4e4e-9135-1d701a9b2c831611724552844-Roadster-Men-Shirts-4521611724551117-5.jpg",
         price: "4999",
        
-        category: "sleepShirt",
+        category: "casualshirt",
         size: [34, 36, 42, 45],
         productDescription: "Amazing clothing you would love the asthectic look and feel of the fabric and will enjoy the time you have it on !"
     
@@ -77,7 +77,7 @@ export const productNameData = [
         discount: 20,
         bestseller: 1,
        
-        category: "sleepShirt",
+        category: "casualshirt",
         size: [34, 36, 42],
         productDescription: "Amazing clothing you would love the asthectic look and feel of the fabric and will enjoy the time you have it on !"
     
@@ -125,7 +125,7 @@ export const productNameData = [
         image4:"https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/21417880/2023/1/5/57f95ee7-72f3-4da1-993e-5ce0b73c59181672857111575MenNavySlimFitCheckFullSleevesFormalShirts4.jpg",
         price: "599",
        
-        category: "sleepShirt",
+        category: "casualshirt",
         size: [34, 36, 42],
         productDescription: "Amazing clothing you would love the asthectic look and feel of the fabric and will enjoy the time you have it on !"
     
@@ -141,7 +141,7 @@ export const productNameData = [
         image4:"https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19347914/2022/8/2/af5cb414-c1ea-4008-b713-8eef624b1e651659430741260AllenSollyNavyShirt4.jpg",
         price: "623",
        
-        category: "dogShirt",
+        category: "partywear",
         size: [34, 36, 42],
         productDescription: "Amazing clothing you would love the asthectic look and feel of the fabric and will enjoy the time you have it on !"
     
@@ -157,7 +157,7 @@ export const productNameData = [
         image4:"https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/20791550/2022/11/17/1db7543c-3a73-44c2-b690-6850b2d2dda71668681675900MenMultiSlimFitStripeFullSleevesFormalShirts4.jpg",
         price: "459",
        
-        category: "sleepShirt",
+        category: "casualshirt",
         size: [34, 36, 42],
         productDescription: "Amazing clothing you would love the asthectic look and feel of the fabric and will enjoy the time you have it on !"
     
@@ -173,7 +173,7 @@ export const productNameData = [
         image4:"https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/20169210/2022/9/26/2d3e844a-296c-4108-a5a5-5c5c9b0252d81664186209704AllenSollyBlueShirt4.jpg",
         price: "899",
        
-        category: "dogShirt",
+        category: "partywear",
         size: [34, 36, 42],
         productDescription: "Amazing clothing you would love the asthectic look and feel of the fabric and will enjoy the time you have it on !"
     
@@ -189,7 +189,7 @@ export const productNameData = [
         image4:"https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19677918/2022/8/26/cd3e9d03-0290-424a-903f-947117d32eea1661504768424AllenSollyNavyShirt4.jpg",
         price: "699",
        
-        category: "dogShirt",
+        category: "partywear",
         size: [34, 36, 42],
         productDescription: "Amazing clothing you would love the asthectic look and feel of the fabric and will enjoy the time you have it on !"
     
@@ -221,7 +221,7 @@ export const productNameData = [
         image4:"https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/18646166/2022/6/20/0d70f704-7fef-42bd-a54a-94d00d00b96c1655725802849-Arrow-Men-Shirts-3941655725802369-4.jpg",
         price: "599",
        
-        category: "dogShirt",
+        category: "partywear",
         size: [34, 36, 42],
         productDescription: "Amazing clothing you would love the asthectic look and feel of the fabric and will enjoy the time you have it on !"
     
