@@ -1,0 +1,15 @@
+.leftside{
+    display: grid;
+    width: 50%;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+.leftside img {
+    width: 50vh;
+}
+.sizebox{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+}
