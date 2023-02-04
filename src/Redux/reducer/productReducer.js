@@ -3,7 +3,9 @@ import { setDataToCart } from "../../Utils/setCartData"
 const initialState = {
    
     cartData : [],
-    wishList : []
+    wishList : [],
+    currentPage : true,
+    currentProduct : 1
 }
 
 export const productReducer = (state = initialState, action)=>{
@@ -25,6 +27,17 @@ export const productReducer = (state = initialState, action)=>{
             return {
                 ...state,
                 cartData : []
+            }
+        case "SETPAGE" : 
+        return {
+            ...state,
+            currentPage : !state.currentPage
+        }
+
+        case "SETPRODUCT":
+            return {
+                ...state,
+                currentProduct : action.payload
             }
         
         default : 

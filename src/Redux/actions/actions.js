@@ -20,3 +20,16 @@ dispatch({
   
 })
 }
+
+export const setPage = (dispatch)=>{
+    dispatch({
+        type:"SETPAGE"
+    })
+}
+
+export const setCurrentProduct = (dispatch, data) =>{
+    dispatch({
+        type: "SETPRODUCT",
+        payload : data
+    })
+}

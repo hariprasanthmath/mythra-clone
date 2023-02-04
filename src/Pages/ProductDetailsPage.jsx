@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import { productNameData } from '../constants/productData';
 import { getCurrentProduct } from '../Utils/getCurrentProduct';
 import { useEffect } from 'react';
@@ -9,15 +9,18 @@ import { useSelector } from 'react-redux';
 import { addProductToCart } from '../Redux/actions/actions';
 import { useDispatch } from 'react-redux';
 import { getCurrentProductCount } from '../Utils/getCurrentProductCount';
+import { setPage } from '../Redux/actions/actions';
+
 function ProductDetailsPage(props) {
     // image2, image3, image4
     // imageUrl
-    let { id } = useParams();
+    // let { id } = useParams();
+    // cosnt [id, setId] = useState(1);
     let [currentProduct, setCurrentProduct] = useState({});
     // console.log(id);
     let [loading, setLoading] = useState(false);
     let {cartData} = useSelector(Store=>Store);
-   
+    let id =  useSelector(Store=>Store.currentProduct);
     let dispatch = useDispatch()
     
 
@@ -29,6 +32,11 @@ function ProductDetailsPage(props) {
         addProductToCart(dispatch, currentProduct , true)
     }
     const handleaddToWishlist = ()=>{
+
+    }
+
+    const handlepagechange = () =>{
+        setPage(dispatch);
 
     }
 
@@ -46,7 +54,14 @@ function ProductDetailsPage(props) {
     },[id]);
 
     return (
+        <>
+        <div onClick={handlepagechange}>
+            <p>
+                {"<- go Back"}
+            </p>
+        </div>
         <div>
+            
             <div className='leftside'>
               
                   <div>  <img src={currentProduct.imageUrl} alt="productimage"></img></div>
@@ -79,6 +94,7 @@ function ProductDetailsPage(props) {
                     </button>
             </div>
         </div>
+        </>
     );
 }
 

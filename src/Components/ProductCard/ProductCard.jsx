@@ -3,16 +3,24 @@ import "./productcard.css"
 import { produtNameData } from '../../constants/productData';
 import { useState } from 'react';
 import { calculateOffer } from '../../Utils/calculateOffer';
+
 import Extracard from './Extracard';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { setPage } from '../../Redux/actions/actions';
+import { useDispatch } from 'react-redux';
+import { setCurrentProduct } from '../../Redux/actions/actions';
 
 function ProductCard({imageUrl, brandName, produtName, gender, image2, image3, image4, price, category, size, productDescription, id}) {
     let [isShown,setIsShown] = useState(false);
     let originalPrice = "2000"
-    let navigate = useNavigate();
-
+    let dispatch = useDispatch();
+    // let {currentPage} = useSelector(State=>State);
     const navigateToDetails = () => {
-       navigate(`/products/${id}`)
+    //    navigate(`/products/${id}`)
+          setPage(dispatch);
+          setCurrentProduct(dispatch, id)
+
     }
 
     return (
